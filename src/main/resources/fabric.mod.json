@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fontscale",
+  "version": "${version}",
+  "name": "Font Scale",
+  "description": "Ajusta el tamaño de la fuente de x1 a x100 con /fontscale <valor>.",
+  "authors": ["Tú"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.fontscale.FontScaleMod"],
+    "modmenu": ["com.example.fontscale.ModMenuIntegration"]
+  },
+  "mixins": ["fontscale.mixins.json"],
+  "suggests": {
+    "modmenu": "*"
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
